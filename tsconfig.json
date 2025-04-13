@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",                           // Good for modern JS
+    "module": "commonjs",                      // Required for Node.js
+    "outDir": "./dist",                        // Transpiled JS output
+    "rootDir": "./src",                        // Source directory
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,                            // Enables all strict type checks
+    "skipLibCheck": true,                      // Skip type checks for node_modules
+    "forceConsistentCasingInFileNames": true,  // Good for cross-platform dev
+    "noImplicitAny": true,                     // (Optional) avoid implicit `any`
+    "strictNullChecks": true,                  // (Optional) better null safety
+    "types": ["node"]                          // ✅ Ensure Node.js types are recognized
+  },
+  "include": ["src", "scripts"],
+  "exclude": ["node_modules", "dist"]
+}
